@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +5,8 @@
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway';
+    font-style: normal;
 }
 
 /*Customização cabeçalho*/
@@ -45,6 +45,7 @@ body{
     background-color: #ffffff;
     border: 1px solid #2A7AE4;
 }
+
 
 .logo{
     max-width: 151px; max-height: 39px;
@@ -110,7 +111,6 @@ body{
 .produtos{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     width: 100%;
     padding: 60px 152px;
     gap: 15px;
@@ -120,6 +120,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 6px;
 }
 
 .produtos-temas{
@@ -162,6 +163,8 @@ body{
 
 .footer{
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     width: 100%;
     height: 381px;
     background: #EAF2FD;
@@ -173,25 +176,71 @@ body{
     height: 39px;
 }
 
+.busca-formulario{
+    display: flex;
+    padding: 16px 16px;
+    background: #ffffff;
+    border: none;
+    width: 560px;
+    height: 56px;
+}
+
+.busca-formulario2{
+    display: flex;
+    padding: 16px 16px;
+    background: #ffffff;
+    border: none;
+    width: 560px;
+    height: 82px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
 .conteudo{
     display: flex;
-    width: 100%;
-    justify-content: space-between;
     flex-direction: row;
-
+    justify-content: space-around;
+    width: 1136px;
+    height: 253px;
+    padding: 64px 0px;
+    gap: 112px;
 }
 
 .links{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     padding: 0px;
-    gap: 24px;
+    gap: 20px;
     width: 176px;
-    height: 253px;
+    height: 38px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
 }
 
-/*
+.button-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    width: 165px;
+    height: 51px;
+    background-color: #2A7AE4;
+    border: none;
+    color: #ffffff;
+}
+
 #rodape{
     display: flex;
     flex-direction: row;
@@ -202,4 +251,4 @@ body{
     padding: 32px;
     text-align: center;
 }
-*/
+
