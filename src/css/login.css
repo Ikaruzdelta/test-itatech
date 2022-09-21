@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    position: relative;
 }
 
 body{
@@ -27,49 +28,6 @@ body{
 .navbar-left{
     display: flex; 
     grid-gap: 32px;
-}
-
-.login{
-    
-    background: #f5f5f5;
-}
-
-.conteiner-login{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 50px;
-    gap: 20px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
-}
-
-.caixa-login{
-    display: flex;
-    padding: 16px 16px;
-    background: #ffffff;
-    border: none;
-    width: 423px;
-    height: 63px;
-    border-radius: 4px;
-}
-
-.button-login{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 16px;
-    width: 423px;
-    height: 62px;
-    background-color: #2A7AE4;
-    border: none;
-    color: #ffffff;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 21px;
 }
 
 .logo{
@@ -104,10 +62,10 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 381px;
+    height: 390px;
     background: #EAF2FD;
-    margin-top: 60px;
 }
 
 .logo-footer{
@@ -150,8 +108,47 @@ body{
     justify-content: space-around;
     width: 1136px;
     height: 253px;
-    padding: 64px 0px;
     gap: 112px;
+}
+
+.login{
+    background: #f5f5f5;
+}
+
+.conteiner-login{
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.caixa-login{
+    display: flex;
+    padding: 16px 16px;
+    border: none;
+    width: 423px;
+    height: 63px;
+    border-radius: 4px;
+}
+
+.button-login{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    width: 423px;
+    height: 62px;
+    background-color: #2A7AE4;
+    border: none;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
 }
 
 .links{
