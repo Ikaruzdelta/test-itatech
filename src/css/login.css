@@ -14,6 +14,8 @@ body{
 .header{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background: #ffffff;
 }
 
@@ -26,7 +28,10 @@ body{
 }
 
 .navbar-left{
-    display: flex; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
     grid-gap: 32px;
 }
 
@@ -36,12 +41,16 @@ body{
 
 .busca{
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     padding: 16px 16px;
     background: #F5F5F5;
     border: none;
     border-radius: 20px;
     width: 393px;
     height: 10px;
+    color: #A2A2A2;
 }
 
 .button-topo{
@@ -68,6 +77,12 @@ body{
     background: #EAF2FD;
 }
 
+.footer-left{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
 .logo-footer{
     width: 150px;
     height: 39px;
@@ -75,11 +90,25 @@ body{
 
 .busca-formulario{
     display: flex;
-    padding: 16px 16px;
+    flex-direction: column;
+    padding: 10px 16px;
     background: #ffffff;
     border: none;
     width: 560px;
     height: 56px;
+    gap: 3px;
+}
+
+.busca-formulario p{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #A2A2A2;
+}
+
+.entrada-nome{
+    display: flex;
+    border: none;
 }
 
 .busca-formulario2{
