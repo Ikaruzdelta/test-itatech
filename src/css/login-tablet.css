@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    position: relative;
 }
 
 body{
@@ -9,7 +10,6 @@ body{
     font-style: normal;
 }
 
-/*Customização cabeçalho*/
 .header{
     display: flex;
     flex-direction: column;
@@ -20,10 +20,9 @@ body{
 
 .itens-topo{
     display: flex;
-    width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
-    padding: 32px 0px;
+    padding: 16px 32px;
 }
 
 .navbar-left{
@@ -31,7 +30,6 @@ body{
     flex-direction: row;
     align-items: center;
     padding: 0px;
-    grid-gap: 32px;
 }
 
 /*Customização barra de pesquisa*/
@@ -39,16 +37,17 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 16px;
-    width: 182px;
-    height: 51px;
+    width: 166px;
+    height: 40px;
     background-color: #ffffff;
     border: 1px solid #2A7AE4;
+    flex: none;
 }
 
 
 .logo{
-    max-width: 151px; max-height: 39px;
+    width: 151px;
+    height: 32px;
 }
 
 .busca{
@@ -60,137 +59,76 @@ body{
     background: #F5F5F5;
     border: none;
     border-radius: 20px;
-    width: 393px;
-    height: 10px;
+    width: 272px;
+    height: 40px;
     color: #A2A2A2;
 }
 
-.carrossel{
-    display: flex;
-    width: 100%;
-    height: 352px;
-    background: linear-gradient(180deg,
-    rgba(0, 0, 0, 0) 41.15%,
-    rgba(0, 0, 0, 0.8) 100%),
-    url('/Imagens/Hero.png') no-repeat center center/cover;
+.login{
+    background: #f5f5f5;
 }
 
-.info-topo{
-    color: #ffffff;
+.conteiner-login{
+    padding: 100px 0px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    width: 1136px;
-    height: 170px;
-    padding: 152px;
-}
-
-.carrossel h1{
-    font-family: 'Raleway';
-    font-size: 52px;
-    line-height: 61px;
-}
-.carrossel p{
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 26px;
-}
-
-.button-topo{
-    display: flex;
     justify-content: center;
-    padding: 16px;
-    width: 130px;
-    height: 51px;
-    background-color: #2A7AE4;
-    border: none;
-    color: #ffffff;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-size: 16px;
-}
-
-#conteiner-produtos{
-    display: flex;
-    flex-direction: column;
     align-items: center;
-}
-
-.produtos{
-    display: flex;
-    flex-direction: column;
-    width: 1136px;
-    height: 306px;
-    padding: 60px 0px;
-    gap: 16px;
-}
-
-.list-produtos{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 6px;
-}
-
-.produtos-temas{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-.produtos-temas h3{
-    font-size: 15px;
-    color: #2A7AE4;
-}
-
-.produto-item{
-    width: 176px;
-    height: 174px;
-}
-
-.produto-nome{
-    width: 176px;
-    height: 16px;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    color: #464646;
-}
-
-.ver-info{
-    width: 100px;
-    height: 19px;
-    font-family: 'Raleway';
-    font-style: normal;
+    gap: 20px;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    color: #2A7AE4;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.caixa-login{
+    display: flex;
+    padding: 16px 16px;
+    border: none;
+    width: 423px;
+    height: 63px;
+    border-radius: 4px;
+}
+
+.button-login{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    width: 423px;
+    height: 62px;
+    background-color: #2A7AE4;
+    color: #ffffff;
+    border: none;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
 }
 
 .footer{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 100%;
-    height: 381px;
+    width: 768px;
+    height: 371px;
     background: #EAF2FD;
-    margin-top: 100px;
 }
 
 #footer-left{
     display: flex;
-    flex-direction: row;
-    gap: 100px;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .logo-footer{
     width: 150px;
     height: 39px;
+}
+
+.links{
+    display: flex;
+    font-size: 16px;
+    line-height: 19px;
 }
 
 .busca-formulario{
@@ -199,7 +137,7 @@ body{
     padding: 10px 16px;
     background: #ffffff;
     border: none;
-    width: 560px;
+    width: 347px;
     height: 56px;
     gap: 3px;
 }
@@ -221,7 +159,7 @@ body{
     padding: 16px 16px;
     background: #ffffff;
     border: none;
-    width: 560px;
+    width: 347px;
     height: 82px;
     flex: none;
     order: 0;
@@ -238,25 +176,11 @@ body{
 .conteudo{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    width: 1136px;
-    height: 253px;
-    padding: 64px 0px;
+    justify-content: center;
+    width: 704px;
+    height: 307px;
+    padding: 40px 0px;
     gap: 112px;
-}
-
-.links{
-    display: flex;
-    flex-direction: column;
-    padding: 0px;
-    gap: 20px;
-    width: 176px;
-    height: 38px;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
 }
 
 .button-footer{
@@ -283,3 +207,6 @@ body{
     text-align: center;
 }
 
+#remove{
+    display: none;
+}

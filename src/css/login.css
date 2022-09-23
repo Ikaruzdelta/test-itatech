@@ -22,9 +22,9 @@ body{
 .itens-topo{
     display: flex;
     width: 100%;
+    justify-content: space-around;
     flex-direction: row;
-    margin-left: 170px;
-    padding: 41px 0px;
+    padding: 32px 0px;
 }
 
 .navbar-left{
@@ -33,6 +33,18 @@ body{
     align-items: center;
     padding: 0px;
     grid-gap: 32px;
+}
+
+/*Customização barra de pesquisa*/
+.button-login-topo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    width: 182px;
+    height: 51px;
+    background-color: #ffffff;
+    border: 1px solid #2A7AE4;
 }
 
 .logo{
@@ -53,34 +65,61 @@ body{
     color: #A2A2A2;
 }
 
-.button-topo{
+.login{
+    background: #f5f5f5;
+}
+
+.conteiner-login{
+    padding: 100px 0px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding: 16px;
-    width: 130px;
-    height: 51px;
-    background-color: #2A7AE4;
+    align-items: center;
+    gap: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.caixa-login{
+    display: flex;
+    padding: 16px 16px;
     border: none;
+    width: 423px;
+    height: 63px;
+    border-radius: 4px;
+}
+
+.button-login{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    width: 423px;
+    height: 62px;
+    background-color: #2A7AE4;
     color: #ffffff;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-size: 16px;
+    border: none;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
 }
 
 .footer{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     width: 100%;
-    height: 390px;
+    height: 381px;
     background: #EAF2FD;
+    margin-top: 40px;
 }
 
-.footer-left{
+#footer-left{
     display: flex;
     flex-direction: row;
-    gap: 100px;
+    gap: 80px;
 }
 
 .logo-footer{
@@ -128,7 +167,6 @@ body{
     display: flex;
     flex-direction: column;
     gap: 16px;
-    color: #464646;
 }
 
 .conteudo{
@@ -137,47 +175,8 @@ body{
     justify-content: space-around;
     width: 1136px;
     height: 253px;
+    padding: 64px 0px;
     gap: 112px;
-}
-
-.login{
-    background: #f5f5f5;
-}
-
-.conteiner-login{
-    padding: 100px 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
-}
-
-.caixa-login{
-    display: flex;
-    padding: 16px 16px;
-    border: none;
-    width: 423px;
-    height: 63px;
-    border-radius: 4px;
-}
-
-.button-login{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 16px;
-    width: 423px;
-    height: 62px;
-    background-color: #2A7AE4;
-    border: none;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 21px;
 }
 
 .links{
@@ -217,4 +216,3 @@ body{
     padding: 32px;
     text-align: center;
 }
-

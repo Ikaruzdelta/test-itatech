@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    position: relative;
 }
 
 body{
@@ -64,30 +65,6 @@ body{
     width: 393px;
     height: 10px;
     color: #A2A2A2;
-}
-
-.info-topo{
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    width: 1136px;
-    height: 170px;
-    padding: 152px;
-}
-
-.button-topo{
-    display: flex;
-    justify-content: center;
-    padding: 16px;
-    width: 130px;
-    height: 51px;
-    background-color: #2A7AE4;
-    border: none;
-    color: #ffffff;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-size: 16px;
 }
 
 #conteiner-produtos{
@@ -284,4 +261,3 @@ body{
     padding: 32px;
     text-align: center;
 }
-
