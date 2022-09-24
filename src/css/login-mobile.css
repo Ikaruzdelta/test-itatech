@@ -11,6 +11,10 @@ body{
     background: #f5f5f5;
 }
 
+#remove-mobile{
+    display: none;
+}
+
 /*Customização cabeçalho*/
 .header{
     display: flex;
@@ -18,18 +22,16 @@ body{
     align-items: center;
     justify-content: center;
     background: #ffffff;
+    width: 360px;
+    height: 72px;
 }
 
 .itens-topo{
     display: flex;
-    width: 100%;
+    align-items: center;
     justify-content: space-around;
     flex-direction: row;
     padding: 32px 0px;
-}
-
-#lupa{
-    display: none;
 }
 
 .navbar-left{
@@ -41,47 +43,37 @@ body{
 }
 
 /*Customização barra de pesquisa*/
-.button-login-topo{
+.button-login{
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 16px;
-    width: 182px;
-    height: 51px;
+    width: 133px;
+    height: 40px;
+    color: #2A7AE4;
     background-color: #ffffff;
     border: 1px solid #2A7AE4;
 }
+
 
 .logo{
     max-width: 151px; max-height: 39px;
 }
 
 .busca{
+    display: none;
+}
+
+#lupa{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 16px;
-    background: #F5F5F5;
-    border: none;
-    border-radius: 20px;
-    width: 393px;
-    height: 10px;
     color: #A2A2A2;
 }
 
-.login{
-    background: #f5f5f5;
-}
-
 .conteiner-login{
-    padding: 100px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    font-weight: 700;
     font-size: 18px;
     line-height: 21px;
 }
@@ -90,8 +82,8 @@ body{
     display: flex;
     padding: 16px 16px;
     border: none;
-    width: 423px;
-    height: 63px;
+    width: 275px;
+    height: 41px;
     border-radius: 4px;
 }
 
@@ -100,31 +92,36 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 16px;
-    width: 423px;
-    height: 62px;
+    padding: 12px 16px;
+    gap: 10px;
+    width: 109px;
+    height: 40px;
     background-color: #2A7AE4;
     color: #ffffff;
     border: none;
     font-weight: 600;
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 14px;
+    line-height: 16px;
 }
 
 .footer{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    height: 381px;
+    flex-direction: column;
+    align-items: center;
     background: #EAF2FD;
-    margin-top: 40px;
+    gap: 16px;
+    width: 360px;
+    height: 542px;
+    padding: 0px;
 }
 
 #footer-left{
     display: flex;
-    flex-direction: row;
-    gap: 80px;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    width: 328px;
+    height: 249px;
 }
 
 .logo-footer{
@@ -132,15 +129,24 @@ body{
     height: 39px;
 }
 
+.links{
+    display: flex;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 10px;
+    text-align: center;
+    width: 328px;
+    height: 194px;
+}
+
 .busca-formulario{
     display: flex;
     flex-direction: column;
-    padding: 10px 16px;
     background: #ffffff;
     border: none;
-    width: 560px;
-    height: 56px;
-    gap: 3px;
+    width: 328px;
+    height: 229px;
+    gap: 8px;
 }
 
 .busca-formulario p{
@@ -160,8 +166,8 @@ body{
     padding: 16px 16px;
     background: #ffffff;
     border: none;
-    width: 560px;
-    height: 82px;
+    width: 328px;
+    height: 56px;
     flex: none;
     order: 0;
     align-self: stretch;
@@ -171,31 +177,18 @@ body{
 .formulario{
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    width: 328px;
+    height: 229px;
+    gap: 08px;
 }
 
 .conteudo{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 1136px;
-    height: 253px;
-    padding: 64px 0px;
-    gap: 112px;
-}
-
-.links{
-    display: flex;
     flex-direction: column;
-    padding: 0px;
-    gap: 20px;
-    width: 176px;
-    height: 38px;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
+    align-items: center;
+    width: 328px;
+    height: 510px;
+    gap: 10px;
 }
 
 .button-footer{
@@ -203,12 +196,13 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 16px;
-    width: 165px;
-    height: 51px;
+    padding: 0px;
+    width: 151px;
+    height: 40px;
     background-color: #2A7AE4;
     border: none;
     color: #ffffff;
+    flex: none;
 }
 
 #rodape{
@@ -220,4 +214,6 @@ body{
     color: #292929;
     padding: 32px;
     text-align: center;
+    width: 360px;
+    height: 102px;
 }

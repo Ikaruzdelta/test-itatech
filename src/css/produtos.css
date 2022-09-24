@@ -20,6 +20,10 @@ body{
     background: #ffffff;
 }
 
+#lupa{
+    display: none;
+}
+
 .itens-topo{
     display: flex;
     width: 100%;

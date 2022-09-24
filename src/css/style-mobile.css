@@ -9,6 +9,10 @@ body{
     font-style: normal;
 }
 
+#remove-mobile{
+    display: none;
+}
+
 /*Customização cabeçalho*/
 .header{
     display: flex;
@@ -16,16 +20,14 @@ body{
     align-items: center;
     justify-content: center;
     background: #ffffff;
-}
-
-#lupa{
-    display: none;
+    width: 360px;
+    height: 72px;
 }
 
 .itens-topo{
     display: flex;
-    width: 100%;
     justify-content: space-around;
+    align-items: center;
     flex-direction: row;
     padding: 32px 0px;
 }
@@ -44,8 +46,9 @@ body{
     align-items: center;
     justify-content: center;
     padding: 16px;
-    width: 182px;
-    height: 51px;
+    width: 133px;
+    height: 40px;
+    color: #2A7AE4;
     background-color: #ffffff;
     border: 1px solid #2A7AE4;
 }
@@ -56,7 +59,7 @@ body{
 }
 
 .busca{
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -64,42 +67,42 @@ body{
     background: #F5F5F5;
     border: none;
     border-radius: 20px;
-    width: 393px;
-    height: 10px;
+    width: 272px;
+    height: 40px;
     color: #A2A2A2;
 }
 
 .carrossel{
     display: flex;
-    width: 100%;
-    height: 352px;
+    width: 360px;
+    height: 192px;
     background: linear-gradient(180deg,
-    rgba(0, 0, 0, 0) 41.15%,
+    rgba(0, 0, 0, 0) 0.15%,
     rgba(0, 0, 0, 0.8) 100%),
     url('/Imagens/Hero.png') no-repeat center center/cover;
 }
 
 .info-topo{
-    color: #ffffff;
     display: flex;
-    flex-direction: column;
-    gap: 16px;
-    width: 1136px;
-    height: 170px;
-    padding: 152px;
+    padding: 65px 25px;
+    color: #ffffff;
 }
 
 .carrossel h1{
-    font-family: 'Raleway';
-    font-size: 52px;
-    line-height: 61px;
-}
-.carrossel p{
-    font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 22px;
-    line-height: 26px;
+    line-height: 15px;
+}
+.carrossel p{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+#lupa{
+    display: flex;
+    color: #A2A2A2;
 }
 
 .button-topo{
@@ -120,22 +123,28 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 360px;
+    height: 1600px;
+    padding: 16px;
 }
 
 .produtos{
     display: flex;
     flex-direction: column;
-    width: 1136px;
-    height: 306px;
-    padding: 60px 0px;
-    gap: 16px;
+    width: 360px;
+    height: 560px;
+    padding: 10px;
+}
+
+.produto-imagem img{
+    width: 156px;
+    height: 164px;
 }
 
 .list-produtos{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 6px;
+    flex-wrap: wrap;
+    width: 346px;
 }
 
 .produtos-temas{
@@ -144,21 +153,22 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+
 .produtos-temas h3{
     font-size: 15px;
     color: #2A7AE4;
 }
 
 .produto-item{
-    width: 176px;
-    height: 174px;
+    width: 160px;
+    height: 252px;
+}
+
+#remove{
+    display: none;
 }
 
 .produto-nome{
-    width: 176px;
-    height: 16px;
-    font-family: 'Raleway';
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -178,18 +188,22 @@ body{
 
 .footer{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    height: 381px;
+    flex-direction: column;
+    align-items: center;
     background: #EAF2FD;
-    margin-top: 100px;
+    gap: 16px;
+    width: 360px;
+    height: 542px;
+    padding: 0px;
 }
 
 #footer-left{
     display: flex;
-    flex-direction: row;
-    gap: 100px;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    width: 328px;
+    height: 249px;
 }
 
 .logo-footer{
@@ -197,15 +211,24 @@ body{
     height: 39px;
 }
 
+.links{
+    display: flex;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 10px;
+    text-align: center;
+    width: 328px;
+    height: 194px;
+}
+
 .busca-formulario{
     display: flex;
     flex-direction: column;
-    padding: 10px 16px;
     background: #ffffff;
     border: none;
-    width: 560px;
-    height: 56px;
-    gap: 3px;
+    width: 328px;
+    height: 229px;
+    gap: 8px;
 }
 
 .busca-formulario p{
@@ -225,8 +248,8 @@ body{
     padding: 16px 16px;
     background: #ffffff;
     border: none;
-    width: 560px;
-    height: 82px;
+    width: 328px;
+    height: 56px;
     flex: none;
     order: 0;
     align-self: stretch;
@@ -236,31 +259,18 @@ body{
 .formulario{
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    width: 328px;
+    height: 229px;
+    gap: 08px;
 }
 
 .conteudo{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 1136px;
-    height: 253px;
-    padding: 64px 0px;
-    gap: 112px;
-}
-
-.links{
-    display: flex;
     flex-direction: column;
-    padding: 0px;
-    gap: 20px;
-    width: 176px;
-    height: 38px;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
+    align-items: center;
+    width: 328px;
+    height: 510px;
+    gap: 10px;
 }
 
 .button-footer{
@@ -268,12 +278,13 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 16px;
-    width: 165px;
-    height: 51px;
+    padding: 0px;
+    width: 151px;
+    height: 40px;
     background-color: #2A7AE4;
     border: none;
     color: #ffffff;
+    flex: none;
 }
 
 #rodape{
@@ -285,5 +296,6 @@ body{
     color: #292929;
     padding: 32px;
     text-align: center;
+    width: 360px;
+    height: 102px;
 }
-

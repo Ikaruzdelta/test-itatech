@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,10 @@
     <link rel="shortcut icon" href="/Imagens/Icon.ico" type="image/x-icon">
     <title>ItaTech</title>
     <link rel="stylesheet" type="text/css" href="/src/css/produtos.css">
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="/src/css/produtos-tablet.css">
+    <link rel="stylesheet" media="screen and (max-width: 360px)" href="/src/css/produtos-mobile.css">
 </head>
 
 <body>
@@ -22,10 +25,14 @@
                     <i class="fa fa-search" aria-hidden="true"></i>
                 </div>
             </div>
-            <button id="remove" class="button-login" onclick="window.location.href = '/src/Pages/login.html'">login</button>
+            <div id="lupa">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+            <button id="remove" class="button-login"
+                onclick="window.location.href = '/src/Pages/login.html'">login</button>
         </div>
     </div>
-    
+
     <div id="conteiner-produtos">
         <!--Conteiner feito para alinhar a grade de produtos no centro, mesmo em tela ultrawide-->
         <div class="produto-destaque">
@@ -103,7 +110,7 @@
             </div>
         </div>
     </div>
-
+    </div>
     <div class="footer">
         <div class="conteudo">
             <div id="footer-left">
@@ -121,7 +128,7 @@
                 <h4>Fale conosco</h4>
                 <div class="busca-formulario">
                     <p>Nome</p>
-                    <input class="entrada-nome" type="text" placeholder="André Lisboa"/>
+                    <input class="entrada-nome" type="text" placeholder="André Lisboa" />
                 </div>
                 <input class="busca-formulario2" type="text" placeholder="Escrever sua mensagem" />
                 <button class="button-footer">
@@ -129,7 +136,6 @@
                 </button>
             </div>
         </div>
-    </div>
     </div>
     <div id="rodape">
         <p>Desenvolvido por Ícaro Gabriel do N. Santos</p>

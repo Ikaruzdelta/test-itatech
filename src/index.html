@@ -9,8 +9,10 @@
     <link rel="shortcut icon" href="/Imagens/Icon.ico" type="image/x-icon">
     <title>ItaTech</title>
     <link rel="stylesheet" type="text/css" href="/src/css/style.css">
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="/src/css/style-tablet.css">
+    <link rel="stylesheet" media="screen and (max-width: 360px)" href="/src/css/style-mobile.css">
 </head>
 
 <body>
@@ -19,11 +21,15 @@
             <div class="navbar-left">
                 <img class="logo" src="/Imagens/Itatech.png">
                 <div class="busca">
-                    <input class="busca" type="text" id="txtBusca" placeholder="O que deseja buscar?" />
+                    <input id="remove-mobile" class="busca" type="text" id="txtBusca"
+                        placeholder="O que deseja buscar?" />
                     <i class="fa fa-search" aria-hidden="true"></i>
                 </div>
             </div>
             <button class="button-login" onclick="window.location.href = '/src/Pages/login.html'">login</button>
+            <div id="lupa">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
         </div>
     </div>
 
@@ -224,33 +230,33 @@
                 </div>
             </div>
         </div>
-        <div class="footer">
-            <div class="conteudo">
-                <div id="footer-left">
-                    <img class="logo-footer" src="/Imagens/Itatech.png">
-                    <div class="links">
-                        <p>Quem somos</p>
-                        <p>Politicas de privacidade</p>
-                        <p>Programa de fidelidade</p>
-                        <p>Novas tendencias</p>
-                        <p>Quero ser franquiado</p>
-                        <p>Anuncie aqui</p>
-                    </div>
-                </div>
-                <div class="formulario">
-                    <h4>Fale conosco</h4>
-                    <div class="busca-formulario">
-                        <p>Nome</p>
-                        <input class="entrada-nome" type="text" placeholder="André Lisboa"/>
-                    </div>
-                    <input class="busca-formulario2" type="text" placeholder="Escrever sua mensagem" />
-                    <button class="button-footer">
-                        Enviar mensagem
-                    </button>
+    </div>
+    <div class="footer">
+        <div class="conteudo">
+            <div id="footer-left">
+                <img class="logo-footer" src="/Imagens/Itatech.png">
+                <div class="links">
+                    <p>Quem somos</p>
+                    <p>Politicas de privacidade</p>
+                    <p>Programa de fidelidade</p>
+                    <p>Novas tendencias</p>
+                    <p>Quero ser franquiado</p>
+                    <p>Anuncie aqui</p>
                 </div>
             </div>
+            <div class="formulario">
+                <h4>Fale conosco</h4>
+                <div class="busca-formulario">
+                    <p>Nome</p>
+                    <input class="entrada-nome" type="text" placeholder="André Lisboa" />
+                </div>
+                <input class="busca-formulario2" type="text" placeholder="Escrever sua mensagem" />
+                <button class="button-footer">
+                    Enviar mensagem
+                </button>
+            </div>
         </div>
-        </div>
+    </div>
     <div id="rodape">
         <p>Desenvolvido por Ícaro Gabriel do N. Santos</p>
     </div>
