@@ -68,7 +68,8 @@ body{
     height: 10px;
     color: #A2A2A2;
 }
-
+/*-------------------*/
+/*Customização do carrosel*/
 .carrossel{
     display: flex;
     width: 100%;
@@ -115,7 +116,8 @@ body{
     font-style: normal;
     font-size: 16px;
 }
-
+/*-------------------*/
+/*Customização dos produtos*/
 #conteiner-produtos{
     display: flex;
     flex-direction: column;
@@ -175,7 +177,8 @@ body{
     line-height: 19px;
     color: #2A7AE4;
 }
-
+/*-------------------*/
+/*Customização do footer*/
 .footer{
     display: flex;
     flex-direction: row;
@@ -275,7 +278,8 @@ body{
     border: none;
     color: #ffffff;
 }
-
+/*-------------------*/
+/*Customização do rodape*/
 #rodape{
     display: flex;
     flex-direction: row;
