@@ -1,7 +1,7 @@
 # test-itatech
 Para concorrer à vaga Itatech Junior desenvolvi uma aplicação web que foi proposto.
 
-Nessa Aplicação criei 03 telas, todas elas sendo responsivo. Todas as telas tem um cabeçalho onde o úsuario pode pesquisar e fazer o login e também tem o rodapé onde o úsuario pode enviar sua dúvida e obter algumas informações. Na primeira tela está os produtos disponiveis, em outra temos o destaque dos produtos junto com produtos similares e em outra tem a área do login. 
+Nessa Aplicação criei 03 telas, todas elas sendo responsivo. Todas as telas têm um cabeçalho onde o usuário pode pesquisar e fazer o login e também tem o rodapé onde o mesmo pode enviar sua dúvida e obter algumas informações. Na primeira tela está os produtos disponíveis, em outra temos o destaque dos produtos junto com produtos similares e na outra tem a área do login. 
 
 <h1>Home Page</h1>
 
